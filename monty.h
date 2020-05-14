@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <ctype.h>
 
 /**
  * struct var_s - struct to contain the main variables of the Monty interpreter
@@ -71,7 +72,6 @@ void m_div(stack_t **stack, unsigned int line_number);
 void m_mod(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
-
 void m_stack(stack_t **stack, unsigned int line_number);
 void m_queue(stack_t **stack, unsigned int line_number);
 
